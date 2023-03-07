@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 1</title>
+</head>
+<body>
+</body>
+<script>
+    let inP = parseInt(prompt('Nhập số'))
+    isPrime(inP)
+    function isPrime(number){
+        if (number <= 1){
+            return alert(' Không phải số nguyên tố')
+        }
+        for (let i = 2; i <= Math.sqrt(number); i++){
+            if (number % i == 0){
+                return alert(' Không phải số nguyên tố')
+            }
+        }
+        return alert(' là số nguyên tố')
+}
+</script>
+</html>
